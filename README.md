@@ -10,8 +10,8 @@ Here's a quick teaser to find the top 5 running backs by rushing yards in the fi
 
 import NFL-Game
 
-games = NFL-Game.games(2013, week=1)
-players = NFL-Game.combine_game_stats(games)
+games = nflgame.games(2013, week=1)
+players = nflgame.combine_game_stats(games)
 for p in players.rushing().sort('rushing_yds').limit(5):
     msg = '%s %d carries for %d yards and %d TDs'
     print msg % (p, p.rushing_att, p.rushing_yds, p.rushing_tds)
