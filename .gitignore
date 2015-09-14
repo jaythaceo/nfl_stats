@@ -10,3 +10,6 @@ playground
 curien-db
 tags
 TAGS
+bin/
+include/
+lib
